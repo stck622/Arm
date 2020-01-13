@@ -1,0 +1,6 @@
+---- currentmode Matches (5 in 1 files) ----
+GPIO_Init in stm32f10x_gpio.c (G:\강의자료\ARM\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src) :   uint32_t currentmode = 0x00, currentpin = 0x00, pinpos = 0x00, pos = 0x00;
+GPIO_Init in stm32f10x_gpio.c (G:\강의자료\ARM\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src) :   currentmode = ((uint32_t)GPIO_InitStruct->GPIO_Mode) & ((uint32_t)0x0F);
+GPIO_Init in stm32f10x_gpio.c (G:\강의자료\ARM\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src) :     currentmode |= (uint32_t)GPIO_InitStruct->GPIO_Speed;
+GPIO_Init in stm32f10x_gpio.c (G:\강의자료\ARM\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src) :         tmpreg |= (currentmode << pos);
+GPIO_Init in stm32f10x_gpio.c (G:\강의자료\ARM\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src) :         tmpreg |= (currentmode << pos);

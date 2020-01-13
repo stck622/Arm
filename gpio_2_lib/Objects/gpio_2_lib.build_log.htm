@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: •ÏVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: gam ball, gamball, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      UL2CM3.DLL V1.155.0.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+G:\ARM\gpio_2_lib\gpio_2_lib.uvproj
+Project File Date:  12/02/2019
+
+<h2>Output:</h2>
+Rebuild target 'gpio2_lib'
+compiling main.c...
+..\gpio2_lib\main.c(301): warning:  #111-D: statement is unreachable
+        distance_flag           = 1;
+..\gpio2_lib\main.c(308): warning:  #223-D: function "micros_10us" declared implicitly
+                c_mi                            = micros_10us();
+..\gpio2_lib\main.c(315): warning:  #223-D: function "Delay" declared implicitly
+                        Delay(1);
+..\gpio2_lib\main.c(333): warning:  #223-D: function "micros_10us" declared implicitly
+                c_mi                            = micros_10us();
+..\gpio2_lib\main.c(329): warning:  #128-D: loop is not reachable
+        while (1)
+..\gpio2_lib\main.c(360): warning:  #940-D: missing return statement at end of non-void function "fputc"
+  }
+..\gpio2_lib\main.c: 6 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\gpio2_lib\stm32f10x_it.c(184): warning:  #1295-D: Deprecated declaration led_toggle - give arg types
+  void led_toggle();
+..\gpio2_lib\stm32f10x_it.c(199): warning:  #1293-D: assignment in condition
+                        if ((ledLight = !ledLight))
+..\gpio2_lib\stm32f10x_it.c: 2 warnings, 0 errors
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=2416 RO-data=268 RW-data=116 ZI-data=1116  
+FromELF: creating hex file...
+".\Objects\gpio_2_lib.axf" - 0 Error(s), 8 Warning(s).
+</pre>
+</body>
+</html>

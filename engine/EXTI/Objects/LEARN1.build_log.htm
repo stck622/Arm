@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: •ÏVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: KIM WONBIN, DGSW, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      UL2CM3.DLL V1.155.0.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+F:\ARM\engine\EXTI\LEARN1.uvprojx
+Project File Date:  09/02/2019
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling Exti.c...
+Exti.c(18): error:  #20: identifier "PWR" is undefined
+    PWR->CR |= PWR_CR_CWUF;
+Exti.c(22): error:  #20: identifier "SCB" is undefined
+    SCB->SCR |= SCB_SCR_SLEEPDEEP;
+Exti.c(41): error:  #20: identifier "EXTI" is undefined
+    if (EXTI->PR & (1<<0)) {                        // EXTI0 interrupt pending?
+Exti.c(46): error:  #20: identifier "GPIOC" is undefined
+        GPIOC->ODR &= ~(0x01 << 13);                           // switch on LED
+Exti.c(60): error:  #20: identifier "EXTI" is undefined
+    if (EXTI->PR & (1<<1)) {                        // EXTI1 interrupt pending?
+Exti.c(62): error:  #20: identifier "GPIOA" is undefined
+        GPIOA->ODR &= ~(0x01 << 8);                           // switch on LED
+Exti.c(80): error:  #20: identifier "EXTI" is undefined
+    if (EXTI->PR & (1<<6)) {                       // EXTI0 interrupt pending?
+Exti.c(82): error:  #20: identifier "GPIOB" is undefined
+        GPIOB->ODR &= ~(0X01<<7);                          // switch on LED
+Exti.c(91): error:  #20: identifier "GPIOC" is undefined
+        GPIOC->ODR &= ~(0X01<<8);                           // switch on LED
+Exti.c(106): error:  #20: identifier "EXTI" is undefined
+    if (EXTI->PR & (1<<13)) {                       // EXTI0 interrupt pending?
+Exti.c(108): error:  #20: identifier "GPIOB" is undefined
+        GPIOB->ODR &= ~LED;                           // switch on LED
+Exti.c(116): error:  #20: identifier "vu32" is undefined
+  void Delay(vu32 nCount) {
+Exti.c(130): warning:  #223-D: function "stm32_Init" declared implicitly
+    stm32_Init ();                                // STM32 setup
+Exti.c(127): warning:  #177-D: variable "a" was declared but never referenced
+        int a;
+Exti.c: 2 warnings, 12 errors
+".\Objects\LEARN1.axf" - 12 Error(s), 2 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  F:\ARM\engine\EXTI\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
